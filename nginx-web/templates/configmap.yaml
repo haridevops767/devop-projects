@@ -4,4 +4,5 @@ metadata:
   name: {{ .Release.Name }}-config
 data:
   index.html: |
-{{ .Values.configMap.indexHtml | indent 4 }}
+{{ tpl (.Files.Get "configmap/index.html") . | indent 4 }}
+
