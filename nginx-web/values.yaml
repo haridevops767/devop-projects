@@ -1,4 +1,4 @@
 # Define values for the Nginx container
 nginx:
-  image: nginx:1.14.2
+  image: nginx:1.14.3
   port: 80
